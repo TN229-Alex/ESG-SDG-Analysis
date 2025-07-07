@@ -1,16 +1,19 @@
 # ESG-SDG-Analysis
 This project analyzes ESG &amp; SDG in 217 sustainability reports to extract SDG-aligned themes and sentiment insights.
 
-## Tools
-- R (tidytext, VADER)
-- Regex, TF-IDF
-- spaCy, data.table
+> Note: Raw input data is not included due to size and source limitations.
 
-## How to Run
-Open `analysis_script.R` and run the pipeline. See `/data` for samples.
+## Tools & Libraies
+This analysis was developed in **R** using the following key packages:
+- `tidyverse` – Core data manipulation and visualization (includes `dplyr`, `ggplot2`)
+- `data.table` – Fast handling of large text data
+- `quanteda` – Tokenization, DFM creation, and advanced text analysis
+- `parallel` + `doParallel` – For scalable processing of 1700+ files
+- `openxlsx2` – For reading and writing Excel files
+- `reshape2` – Reshaping data frames for aggregation and plotting
 
 ## Outputs
-Sentiment charts and SDG coverage visualized in `/output`
+SDG/ESG coverage in excel data.
 
 ## Note
 This project is for educational/demo purposes. Data has been anonymized.
